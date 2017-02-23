@@ -61,12 +61,66 @@ ID = list(range(1,NUM_ACTUATOR+1))
 tiempo = 10
 
 ## Parametros de la ecuacion de Choset (linear)
-amplitud_par        = 40
-amplitud_impar      = 0
+#amplitud_par        = 30
+#amplitud_impar      = 0
+#offset_par          = 0
+#offset_impar        = 0 
+#desfase             = 0
+#dtheta_dn           = 120
+#dtheta_dt           = -36
+
+## Parametros de la ecuacion de Choset (linear_high)
+#amplitud_par        = 45
+#amplitud_impar      = 10
+#offset_par          = 0
+#offset_impar        = 0 
+#desfase             = 0
+#dtheta_dn           = 120
+#dtheta_dt           = -18
+
+## Parametros de la ecuacion de Choset (linear_offset)
+#amplitud_par        = 30
+#amplitud_impar      = 0
+#offset_par          = 0
+#offset_impar        = 10 
+#desfase             = 0
+#dtheta_dn           = 120
+#dtheta_dt           = -36
+
+## Parametros de la ecuacion de Choset (rolling)
+#amplitud_par        = 10
+#amplitud_impar      = 10
+#offset_par          = 0
+#offset_impar        = 0 
+#desfase             = 45
+#dtheta_dn           = 0
+#dtheta_dt           = -36
+
+## Parametros de la ecuacion de Choset (Sidewinding)
+#amplitud_par        = 40
+#amplitud_impar      = 10
+#offset_par          = 0
+#offset_impar        = 0 
+#desfase             = 45
+#dtheta_dn           = 30
+#dtheta_dt           = -36
+
+## Parametros de la ecuacion de Choset (Sidewinding_low)
+#amplitud_par        = 40
+#amplitud_impar      = 10
+#offset_par          = 0
+#offset_impar        = 0 
+#desfase             = 45
+#dtheta_dn           = 120
+#dtheta_dt           = -36
+
+## Parametros de la ecuacion de Choset (helix_rolling)
+amplitud_par        = 60
+amplitud_impar      = 60
 offset_par          = 0
 offset_impar        = 0 
-desfase             = 0
-dtheta_dn           = 120
+desfase             = 90
+dtheta_dn           = 10
 dtheta_dt           = -18
 
 port_num = dynamixel.portHandler(DEVICENAME)
@@ -142,6 +196,18 @@ for t_time in range(tiempo):
 
 ## Close port
 dynamixel.closePort(port_num)
+
+
+
+
+
+
+
+
+
+
+        
+        
 
 
 
